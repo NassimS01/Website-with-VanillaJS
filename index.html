@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SportLine</title>
+      <link rel="stylesheet" href="./style/style.css">
+      <link data-react-helmet="true" rel="shortcut icon" sizes="32x32" href="/images/sportline-favicon.webp">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+      <header class="header">
+            <div class="logo">
+                  <a href="#"><img src="./images/header-spl-logo.png" alt=""></a>
+            </div>
+            <nav class="mobile-menu">
+                  <ul>
+                        <li class="item item-link">
+                              <a href="#">Inicio</a>
+                        </li>
+                        <li class="item item-link">
+                              <a href="#products">Productos</a>
+                        </li>
+                        <li class="item item-link">
+                              <a href="#contacts">Contacto</a>
+                        </li>
+                        <li class="item item-link">
+                              <a href="/account.html">Cuenta</a>
+                        </li>
+                  </ul>
+            </nav>
+            <!-- Carrito icon -->
+            <div class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                  <span class="show-cart-items">0</span>
+            </div>
+
+            <!-- Menu Carrito -->
+
+            <aside class="menu-cart">
+                  <span>
+                        <i class="fa-solid fa-xmark" id="close-cart"></i>
+                  </span>
+                  <h2 class="cart-title">Su carrito</h2>
+                  <div class="cart-content"></div>
+                  <div class="cart-footer">
+                        <h3>Su total: $ <span class="cart-total">0</span></h3>
+                        <button class="buy">Comprar</button>
+                  </div>
+
+            </aside>
+
+            <!-- Menu hamburguesa -->
+            <button class="hamburger">
+                  <div class="bar"></div>
+            </button>
+      </header>
+      <div class="background">
+            <div class="container">
+                  <div class="row row-1">
+                        <div class="col-2">
+                              <img src="/images/1f6a5b126259527.612999360b0ab.png" alt="">
+                        </div>
+                        <div class="col-2">
+                              <h1>Dale un nuevo estilo a tu entrenamiento!</h1>
+                              <p>
+                                    El éxito no siempre consiste en la grandeza. Se trata de consistencia. El trabajo
+                                    duro
+
+                                    y consistente consigue el éxito.
+                                    Y la grandeza llegará.
+
+                              </p>
+                              <a href="#products" class="btn">Ver lo nuevo &#8594;</a>
+                        </div>
+
+                  </div>
+            </div>
+      </div>
+
+      <!-- Categories -->
+      <main>
+
+
+            <!-- Products -->
+            <div class="sm-container" id="products">
+                  <h2 class="title">Nuestros Productos</h2>
+                  <div class="categories" id="inicio">
+                        <button class="category active">Todos</button>
+                        <button class="category" data-category="buzo">Buzo</button>
+                        <button class="category" data-category="musculosa">Musculosa</button>
+                        <button class="category" data-category="remera">Remera</button>
+                        <button class="category" data-category="camiseta">Camiseta</button>
+                  </div>
+                  <div class="sm-container-products">
+                        <div class="flex-product"></div>
+                  </div>
+
+
+                  <!-- Contacto -->
+
+                  <section>
+                        <div class="sm-container bg-contact" id="contacts">
+                              <div class="contact">
+                                    <div class="contactForm">
+                                          <form>
+                                                <h2 class="title">Contáctanos</h2>
+                                                <div class="inputBox">
+                                                      <input type="text" name="" id="" required>
+                                                      <span>Nombre Completo</sp>
+                                                </div>
+                                                <div class="inputBox">
+                                                      <input type="text" name="" id="" required>
+                                                      <span>Email</span>
+                                                </div>
+                                                <div class="inputBox">
+                                                      <input type="tel" name="" id="" required>
+                                                      <span>Número de Contacto</span>
+                                                </div>
+                                                <div class="inputBox">
+                                                      <textarea required></textarea>
+                                                      <span>Escribe el mensaje</span>
+                                                </div>
+                                                <div class="inputBox c-submit">
+                                                      <input type="submit" value="Send">
+                                                </div>
+                                          </form>
+                                    </div>
+                              </div>
+                        </div>
+                  </section>
+      </main>
+      <!-- Footer -->
+
+      <footer class="footer">
+            <div class="container">
+                  <div class="row line">
+                        <div class="footer-col-1">
+                              <h3>Descarga nuestra App</h3>
+                              <p>Descarga la APP para iOS o Android</p>
+                              <div class="app-logo">
+                                    <a href="#"><img src="/images/play-store.png" alt="Play Store"></a>
+                                    <a href="#"><img src="/images/app-store.png" alt="App store"></a>
+                              </div>
+                        </div>
+                        <div class="footer-col-2">
+                              <img src="images/header-spl-logo.png" alt="">
+                              <h3>Nuestro propósito es hacer que el placer y los beneficios del deporte sean accesibles
+                                    de
+                                    forma sostenible para muchos</h3>
+                        </div>
+                        <div class="footer-col-4">
+                              <h3>Nuestras Redes</h3>
+                              <ul>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">TikTok</a></li>
+                              </ul>
+                        </div>
+                  </div>
+                  <p class="copyright">Copyright 2022 - Salomón Nassim</p>
+            </div>
+      </footer>
+      <div class="add-modal"></div>
+      <!-- <script src="main.js"></script> -->
+      <script src="./data.js"></script>
+      <script src="./main.js"></script>
+
+</body>
+
+</html>
